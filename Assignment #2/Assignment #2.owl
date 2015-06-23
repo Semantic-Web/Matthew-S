@@ -125,6 +125,26 @@
 
 
 
+###  http://www.semanticweb.org/matthew/ontologies/assignment2#TestTrail
+
+:TestTrail rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Test ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSignal ;
+                             owl:someValuesFrom :InertialSignals
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasActivity ;
+                             owl:someValuesFrom :Activity
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPerson ;
+                             owl:someValuesFrom :Person
+                           ] .
+
+
+
 ###  http://www.semanticweb.org/matthew/ontologies/assignment2#TotalAcceleration
 
 :TotalAcceleration rdf:type owl:Class ;
@@ -138,6 +158,26 @@
 :Train rdf:type owl:Class ;
        
        rdfs:subClassOf :Trial .
+
+
+
+###  http://www.semanticweb.org/matthew/ontologies/assignment2#TrainTrial
+
+:TrainTrial rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Train ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSignal ;
+                              owl:someValuesFrom :InertialSignals
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasActivity ;
+                              owl:someValuesFrom :Activity
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasPerson ;
+                              owl:someValuesFrom :Person
+                            ] .
 
 
 
