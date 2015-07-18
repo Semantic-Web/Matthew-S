@@ -1,0 +1,1 @@
+This is my submission for Assignment #2.  This folder contains a "pizza.owl" file based on the textbook tutorial and a "Assignment #2.owl" file based on the "Human Activity Recognition using Smart Phones" dataset provided.
